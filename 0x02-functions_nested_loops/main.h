@@ -5,6 +5,8 @@
 int _putchar(char c);
 /*function that prints the alphabet, in lowercase*/
 void print_alphabet(void);
+/* function that prints 10 times the alphabet*/
+void print_alphabet_x10(void);
 
 
 #endif
