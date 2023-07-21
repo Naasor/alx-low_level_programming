@@ -10,9 +10,9 @@ void print_line(int n)
 {
 	int y;
 
-	for (y = 0; y < n, y++)
+	for (y = 0; y < n; y++)
 	{
-		_putchar(45);
+		_putchar(95);
 	}
 	_putchar('\n');
 }
