@@ -11,15 +11,15 @@ void print_diagonal(int n)
 	int x;
 	int w;
 
-	if (n <= 0)
+	if (n <= 48)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (x = 0; x < n; x++)
+		for (x = 48; x < n; x++)
 		{
-			for (w = 0; w < n; w++)
+			for (w = 48; w < n; w++)
 			{
 				_putchar(32);
 			}
