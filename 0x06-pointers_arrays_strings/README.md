@@ -15,10 +15,10 @@ functions written in the project.
 | `5-string_toupper.c` | `char *string_toupper(char *);`                                |
 | `6-cap_string.c`     | `char *cap_string(char *);`                                    |
 | `7-leet.c`           | `char *leet(char *);`                                          |
-| `8-rot13.c`          | `char *rot13(char *);`                                         |
-| `100-print_number.c` | `void print_number(int n);`                                    |
-| `102-infinite_add.c` | `char *infinite_add(char *n1, char *n2, char *r, int size_r);` |
-| `103-print_buffer.c` | `void print_buffer(char *b, int size);`                        |
+| `100-rot13.c`        | `char *rot13(char *);`                                         |
+| `101-print_number.c` | `void print_number(int n);`                                    |
+| `103-infinite_add.c` | `char *infinite_add(char *n1, char *n2, char *r, int size_r);` |
+| `104-print_buffer.c` | `void print_buffer(char *b, int size);`                        |
 
 ## Tasks
 [0-strcat.c](./0-strcat.c): Write a function that concatenates two strings.
@@ -64,27 +64,50 @@ functions written in the project.
 - You are not allowed to use `switch`
 - You are not allowed to use any ternary operation
 
-[8-rot13.c](./8-rot13.c): C function that encodes a string to rot13, without
-  `switch` or ternary operations and using only one `if` and two loops.
+[100-rot13.c](./100-rot13.c): Write a function that encodes a string using [rot13](https://en.wikipedia.org/wiki/ROT13).
+- Prototype: `char *rot13(char *);`
+- You can only use `if` statement once in your code
+- You can only use two loops in your code
+- You are not allowed to use `switch`
+- You are not allowed to use any ternary operation
 
-[100-print_number.c](./100-print_number.c): C function that prints an integer
-  without using `long`, arrays, pointers, or hard-coded special values.
+[101-print_number.c](./101-print_number.c): Write a function that prints an integer.
+- Prototype: `void print_number(int n);`
+- You can only use `_putchar` function to print
+- You are not allowed to use long
+- You are not allowed to use arrays or pointers
+- You are not allowed to hard-code special values
 
-[101-magic.c](./101-magic.c): C program that prints `a[2] = 98` using pointer magic.
-    * Completion of [this source code](https://github.com/holbertonschool/make_magic_happen/blob/master/magic.c).
+[102-magic.c](./102-magic.c): Add one line to [this code](https://github.com/alx-tools/make_magic_happen/blob/master/magic.c), so that the program prints a[2] = 98, followed by a new line.
+- You are not allowed to use the variable `a` in your new line of code
+- You are not allowed to modify the variable `p`
+- You can only write one statement
+- You are not allowed to use `,`
+- You are not allowed to code anything else than the line of expected line of code at the expected line
+- Your code should be written at line 19, before the ;
+- Do not remove anything from the initial code (not even the comments)
+- and don’t change anything but the line of code you are adding (don’t change the spaces to tabs!)
+- You are allowed to use the standard library
 
-[102-infinite_add.c](./102-infinite_add.c): C function that adds two numbers stored
-  in strings to a buffer.
-    * Assumes that strings are never empty and that numbers will always be positive, or 0.
-    * Assumes there are only digits stored in the number strings.
-    * If result can be stored in the buffer, returns a pointer to the result.
-    * If result cannot be stored in the buffer, returns `0`.
+[103-infinite_add.c](./103-infinite_add.c): Write a function that adds two numbers.
+- Prototype: char *infinite_add(char *n1, char *n2, char *r, int size_r);
+- Where n1 and n2 are the two numbers
+- r is the buffer that the function will use to store the result
+- size_r is the buffer size
+- The function returns a pointer to the result
+- You can assume that you will always get positive numbers, or 0
+- You can assume that there will be only digits in the strings n1 and n2
+- n1 and n2 will never be empty
+- If the result can not be stored in r the function must return 0
 
-[103-print_buffer.c](./103-print_buffer.c): C function that prints the content of an
-  inputted number of bytes from a buffer.
-    * Prints 10 bytes per line.
-    * Starts with the position of the first byte in hexadecimal (8 chars), starting with `0`.
-    * Each line shows the hexadecimal content (2 chars) of the buffer, 2 bytes at a time, separated by a space.
-    * Each line shows the content of the buffer. Prints the byte if it is printable; if not, prints `.`.
-    * Each line ends with a new line `\n`.
-    * If the inputted byte size is 0 or less, the function only prints a new line.
+[104-print_buffer.c](./104-print_buffer.c): Write a function that prints a buffer.
+- Prototype: `void print_buffer(char *b, int size);`
+- The function must print the content of size bytes of the buffer pointed by b
+- The output should print 10 bytes per line
+- Each line starts with the position of the first byte of the line in hexadecimal (8 chars), starting with 0
+- Each line shows the hexadecimal content (2 chars) of the buffer, 2 bytes at a time, separated by a space
+- Each line shows the content of the buffer. If the byte is a printable character, print the letter, if not, print .
+- Each line ends with a new line \n
+- If size is 0 or less, the output should be a new line only \n
+- You are allowed to use the standard library
+- The output should look like the following example, and formatted exactly the same way:
