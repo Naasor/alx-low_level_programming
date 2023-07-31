@@ -9,9 +9,9 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	while (*s)
+	while (*s != '\0')
 	{
-		while (*accept)
+		while (*accept != '\0')
 		{
 			if (*s == *accept)
 			{
