@@ -40,10 +40,10 @@
 - The terminating null bytes (`\0`) are not compared
 - Returns a pointer to the beginning of the located substring, or `NULL` if the substring is not found.
 
-[6-print_chessboard.c](./6-print_chessboard.c): Write a function that prints the chessboard.
+[7-print_chessboard.c](./7-print_chessboard.c): Write a function that prints the chessboard.
 - Prototype: `void print_chessboard(char (*a)[8]);`
 
-[7-print_diagsums.c](./7-print_diagsums.c): Write a function that prints the sum of the two diagonals of a square matrix of integers.
+[8-print_diagsums.c](./8-print_diagsums.c): Write a function that prints the sum of the two diagonals of a square matrix of integers.
 - Prototype: `void print_diagsums(int *a, int size);`
 - Format: see example
 - You are allowed to use the standard library
