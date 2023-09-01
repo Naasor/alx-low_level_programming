@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * print_binary - function that prints the binary representation of a number
@@ -21,9 +19,9 @@ void print_binary(unsigned long int n)
 			_putchar('1');
 			index++;
 		}
-		else if (index != NULL)
+		else if (index)
 			_putchar('0');
 	}
-	if (index == NULL)
+	if (!index)
 		_putchar('0');
 }
