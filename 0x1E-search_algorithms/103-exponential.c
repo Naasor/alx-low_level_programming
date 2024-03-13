@@ -9,7 +9,7 @@
   * @value: The value to search for.
   *
   * Return: If the value is not present or the array is NULL, -1.
-  *         Otherwise, the index where the value is located.
+  *         else, the index where the value is located.
   *
   * Description: Prints the [sub]array being searched after each change.
   */
@@ -67,3 +67,4 @@ int exponential_search(int *array, size_t size, int value)
 	right = i < size ? i : size - 1;
 	printf("Value found between indexes [%ld] and [%ld]\n", i / 2, right);
 	return (_binary_search(array, i / 2, right, value));
+}
